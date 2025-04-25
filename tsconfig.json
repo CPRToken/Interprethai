@@ -5,7 +5,7 @@
     "strict": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
-    "baseUrl": "src",
+    "baseUrl": ".",
     "jsx": "preserve",
     "lib": [
       "dom",

@@ -114,9 +114,6 @@ function productIdToPlan(priceId: string): string {
       'price_1RHncZI7exj9oAo9J9m5yGxh': 'PremiumYearly',
 
 
-      'price_1QNpX8I7exj9oAo9erM3juYm': 'Basic',
-      'price_1QNpV9I7exj9oAo9Aq2lz9Uz': 'Premium',
-
 
       'price_canceled': 'Canceled'
     };

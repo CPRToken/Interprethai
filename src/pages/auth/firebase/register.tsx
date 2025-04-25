@@ -122,12 +122,7 @@ const Page: NextPage = () => {
         }
 
         const { sessionId } = await response.json();
-        const stripe = await loadStripe(
-          process.env.NODE_ENV === 'development'
-            ? process.env.NEXT_PUBLIC_STRIPE_TEST_PUBLISHABLE_KEY!
-            : process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!
-        );
-
+        const stripe = await loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
         await stripe?.redirectToCheckout({ sessionId });
       } catch (err: any) {
         console.error(err);
