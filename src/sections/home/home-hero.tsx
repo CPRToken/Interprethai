@@ -76,7 +76,7 @@ export const HomeHero: FC = () => {
 
               <Typography
                   sx={{
-                    ...typography.h4,
+                    ...typography.h3,
                     color: 'text.primary',
                     mt: { xs: 3,  md: 3, lg: 3 },  // Adjust top margin for mobile
                     pt: { xs: 3, lg: 5 },
