@@ -100,6 +100,7 @@ const Page: NextPage = () => {
           creationDate: serverTimestamp(),
           loginEvents: [],
           referrer, // Added referral field
+          characterCount: 0
         });
 
         // Create Stripe Checkout Session

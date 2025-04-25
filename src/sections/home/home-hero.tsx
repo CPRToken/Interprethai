@@ -32,6 +32,7 @@ export const HomeHero: FC = () => {
             pb: '10px',
             height: '60vh', // Default to 70% of the viewport height
             width: 'cover',
+            marginBottom: '-90px', // 👈 Add this line
             '@media (max-width:600px)': {
               height: '50vh', // Adjust height for xs screens
 
@@ -53,7 +54,8 @@ export const HomeHero: FC = () => {
             }}
           >
             <Stack
-              direction={{ xs: 'column', lg: 'row' }}  // Single column for xs to md, row for lg and xl
+              direction="column"
+              // Single column for xs to md, row for lg and xl
               justifyContent="space-between"
               textAlign={{ xs: 'center', lg: 'left' }}  // Center text on xs to md, left on lg and xl
               spacing={2}
@@ -65,19 +67,21 @@ export const HomeHero: FC = () => {
               {/* Column 1 */}
               <Box
                 sx={{
-                  width: { xs: '100%', md: '48%', lg: '48%' },  // Full width on xs to md, 48% on lg and xl
-                  mt: { xs: 3, sm: 2, md: 1, lg: 0 },  // Adjust margin-top for mobile, remove for lg and xl
-                  pt:{ xs: 2, sm: 2, md: 1,  lg: 0 },
-
+                  width: '100%',
+                  textAlign: 'center',
+                  mt: { xs: 3, sm: 2, md: 1 },
+                  pt: { xs: 2, sm: 2, md: 1 },
                 }}
               >
-                <Typography
+
+              <Typography
                   sx={{
                     ...typography.h4,
                     color: 'text.primary',
                     mt: { xs: 3,  md: 3, lg: 3 },  // Adjust top margin for mobile
                     pt: { xs: 3, lg: 5 },
-                    mb: 0
+                    mb: 0,
+                    textAlign: 'center'
                   }}
                 >
                   {t(tokens.headings.Heading)}
@@ -97,10 +101,7 @@ export const HomeHero: FC = () => {
                 </Typography>
               </Box>
 
-              {/* Column 2 */}
-              <Box sx={{ width: '48%' }}>  {/* Adjusted to 48% for better spacing */}
-                {/* Your content for the second column */}
-              </Box>
+
             </Stack>
           </Box>
         </Container>

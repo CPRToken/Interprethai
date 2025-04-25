@@ -445,6 +445,8 @@ headings: {
       dessertGeneratorAbout: 'form.dessertGeneratorAbout',
       bookSummariserAbout: 'form.bookSummariserAbout',
       fruitsNVegesAbout: 'form.fruitsNVegesAbout',
+      restrictedAccess: 'form.restrictedAccess',
+      unlimitedAccess: 'form.unlimitedAccess',
 
       filmTitle: 'form.filmTitle',
       investments: 'form.investments',

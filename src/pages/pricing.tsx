@@ -84,9 +84,13 @@ const PricingSection: FC = () => {
 
   return (
     <>
-      <LanguageSwitch />
+
       <Seo title="Pricing" />
-      <Box component="main" sx={{ flexGrow: 1 }}>
+      <Box component="main" sx={{ flexGrow: 1, mt: '-40px' }}>
+
+
+
+
         <Box
           sx={{
             backgroundColor: (theme) =>
@@ -121,9 +125,9 @@ const PricingSection: FC = () => {
               </Stack>
             </Box>
             <Grid container spacing={4}>
-              <Grid xs={12} md={4}>
+              <Grid xs={12} md={6}>
                 <div
-                  onClick={() => handleCheckout(isYearly ? 'BasicYearly' : 'Basic')}
+                  onClick={() => handleCheckout(isYearly ? 'RestrictedYearly' : 'Restricted')}
                   style={{
                     cursor: 'pointer',
                     height: '100%',
@@ -136,13 +140,10 @@ const PricingSection: FC = () => {
                     cta={t(tokens.form.startFreeTrial)}
                     currency="$"
                     description={t(tokens.form.planDescription)}
-                    info={t(tokens.form.allContent)}
-                    features={[
-                      t(tokens.nav.imageGenerator),
-                      t(tokens.form.basicTools),
-                      t(tokens.nav.SEOWriter),
-                      t(tokens.form.unlimitedWords),
-                    ]}
+                    info={t(tokens.form.restrictedAccess)}
+
+
+
                     icon={<PricingPlanIcon name="startup" />}
                     name={t(tokens.form.Basic)}
                     popular
@@ -156,9 +157,9 @@ const PricingSection: FC = () => {
                   />
                 </div>
               </Grid>
-              <Grid xs={12} md={4}>
+              <Grid xs={12} md={6}>
                 <div
-                  onClick={() => handleCheckout(isYearly ? 'PremiumYearly' : 'Premium')}
+                  onClick={() => handleCheckout(isYearly ? 'UnlimitedYearly' : 'Unlimited')}
                   style={{
                     cursor: 'pointer',
                     height: '100%',
@@ -171,13 +172,8 @@ const PricingSection: FC = () => {
                     cta={t(tokens.form.startFreeTrial)}
                     currency="$"
                     description={t(tokens.form.planDescription)}
-                    info={t(tokens.form.allContent)}
-                    features={[
-                      t(tokens.nav.imageGenerator),
-                      t(tokens.form.premTools),
-                      t(tokens.nav.SEOWriter),
-                      t(tokens.form.unlimitedWords),
-                    ]}
+                    info={t(tokens.form.unlimitedAccess)}
+
                     icon={<PricingPlanIcon name="standard" />}
                     name={t(tokens.form.Premium)}
                     popular
@@ -191,41 +187,7 @@ const PricingSection: FC = () => {
                   />
                 </div>
               </Grid>
-              <Grid xs={12} md={4}>
-                <div
-                  onClick={() => handleCheckout(isYearly ? 'BusinessYearly' : 'Business')}
-                  style={{
-                    cursor: 'pointer',
-                    height: '100%',
-                    maxWidth: 460,
-                    marginLeft: 'auto',
-                    marginRight: 'auto',
-                  }}
-                >
-                  <PricingPlan
-                    cta={t(tokens.form.startFreeTrial)}
-                    currency="$"
-                    description={t(tokens.form.planDescription)}
-                    info={t(tokens.form.allContent)}
-                    features={[
-                      t(tokens.nav.imageGenerator),
-                      t(tokens.form.businessTools),
-                      t(tokens.nav.SEOWriter),
-                      t(tokens.form.unlimitedWords),
-                    ]}
-                    icon={<PricingPlanIcon name="business" />}
-                    name={t(tokens.form.BusinessP)}
-                    popular
-                    price={isYearly ? t(tokens.form.priceBusinessYearlyCurrency) : t(tokens.form.priceBusinessCurrency)}
-                    priceId={isYearly ? t(tokens.form.priceBusinessYearly) : t(tokens.form.priceBusiness)}
-                    sx={{
-                      height: '100%',
-                      maxWidth: 460,
-                      mx: 'auto',
-                    }}
-                  />
-                </div>
-              </Grid>
+
             </Grid>
             <Box sx={{ mt: 4 }}>
               <Typography align="center" color="text.secondary" component="p" variant="caption">

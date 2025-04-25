@@ -17,7 +17,7 @@ interface PricingPlanProps {
   currency?: string;
   description: string;
   info?: string;
-  features: string[];
+
   icon: ReactNode;
   name: string;
   price: string;
@@ -28,7 +28,7 @@ interface PricingPlanProps {
 }
 
 export const PricingPlan: FC<PricingPlanProps> = (props) => {
-  const { cta, currency, description, info, features, icon, name, price, priceId, popular, sx, onClick, ...other } = props;
+  const { cta, currency, description, info,  icon, name, price, priceId, popular, sx, onClick, ...other } = props;
 
   const handleClick = () => {
     if (onClick) {
@@ -94,33 +94,8 @@ export const PricingPlan: FC<PricingPlanProps> = (props) => {
           p: 3,
         }}
       >
-        <Stack
-          spacing={2}
-          sx={{ flexGrow: 1 }}
-        >
-          {features.map((feature) => (
-            <Stack
-              alignItems="center"
-              direction="row"
-              spacing={1}
-              key={feature}
-              sx={{
-                alignItems: 'center',
-                display: 'flex',
-              }}
-            >
-              <SvgIcon color="success">
-                <CheckIcon />
-              </SvgIcon>
-              <Typography
-                sx={{ fontWeight: 500 }}
-                variant="body2"
-              >
-                {feature}
-              </Typography>
-            </Stack>
-          ))}
-        </Stack>
+
+
         <Box
           sx={{
             display: 'flex',
@@ -146,7 +121,7 @@ PricingPlan.propTypes = {
   currency: propTypes.string.isRequired,
   description: propTypes.string.isRequired,
   info: propTypes.string,
-  features: propTypes.array.isRequired,
+
   icon: propTypes.any.isRequired,
   name: propTypes.string.isRequired,
   price: propTypes.string.isRequired,

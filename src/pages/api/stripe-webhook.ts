@@ -165,7 +165,7 @@ async function updateUserPlan(stripeCustomerId: string, plan: string, priceId: s
 }
 
 async function sendCancellationEmail(email: string, plan: string, customerId: string) {
-  await fetch('https://your-domain.com/api/cancelled-email', {
+  await fetch('https://interprethai/api/cancelled-email', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ to: email, plan, stripeCustomerId: customerId }),

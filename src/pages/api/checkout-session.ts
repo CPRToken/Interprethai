@@ -43,9 +43,7 @@
         success_url: process.env.NEXT_PUBLIC_SUCCESS_URL!,
         cancel_url: process.env.NEXT_PUBLIC_CANCEL_URL!,
         customer: customer.id,
-        subscription_data: {
-          trial_period_days: 3,
-        },
+
         metadata: {
           uid: userId,
           email: userEmail,
