@@ -283,6 +283,11 @@ export const en = {
   [tokens.form.priceBusinessYearly]: 'price_1QNpiKI7exj9oAo9CcI657sF',
   [tokens.form.priceBusinessYearlyCurrency]: '$19.99',
 
+  [tokens.form.priceTestBasic]: 'price_1RHnZSI7exj9oAo9bQh8kpmY',
+  [tokens.form.priceTestBasicYearly]: 'price_1RHnagI7exj9oAo9MDgX1gFh',
+  [tokens.form.priceTestPremium]: 'price_1RHnbeI7exj9oAo9FRiFZ0Hn',
+  [tokens.form.priceTestPremiumYearly]: 'price_1RHncZI7exj9oAo9J9m5yGxh',
+
     [tokens.form.propertyType]: 'Property Type',
   [tokens.form.industrialChic]: 'Industrial Chic',
     [tokens.form.colorTheme]: 'Color Theme: e.g. Grey & White',

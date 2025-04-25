@@ -259,6 +259,11 @@ headings: {
       priceBusinessCurrency: 'form.priceBusinessCurrency',
       priceBusinessYearly: 'form.priceBusinessYearly',
       priceBusinessYearlyCurrency: 'form.priceBusinessYearlyCurrency',
+      priceTestBasicYearly: 'form.priceTestBasicYearly',
+      priceTestBasic: 'form.priceTestBasicYearly',
+      priceTestPremium: 'form.priceTestPremium',
+      priceTestPremiumYearly: 'form.priceTestPremiumYearly',
+
       Images: 'form.Images',
       Content: 'form.Content',
       articulateIntro: 'form.articulateIntro',

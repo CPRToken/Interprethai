@@ -3,7 +3,7 @@ import type { NextPage } from 'next';
 import { Seo } from 'src/components/seo';
 import { usePageView } from 'src/hooks/use-page-view';
 import { Layout as MarketingLayout } from 'src/layouts/marketing';
-import { HomeCta } from 'src/sections/home/home-cta';
+import PricingTestSection from  'src/pages/pricing-test'
 import { HomeHero } from 'src/sections/home/home-hero';
 import PricingSection from  'src/pages/pricing'
 import { useRouter } from 'next/router';
@@ -31,7 +31,7 @@ const Page: NextPage = () => {
 
         <HomeHero />
 
-<PricingSection/>
+<PricingTestSection/>
 
       </main>
     </>

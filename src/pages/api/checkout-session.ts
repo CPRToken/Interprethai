@@ -5,8 +5,8 @@
 
 
 
-  const stripeSecretKey = process.env.STRIPE_SECRET_KEY;
-  const stripeWebhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
+  const stripeSecretKey = process.env.STRIPE_TEST_SECRET_KEY;
+  const stripeWebhookSecret = process.env.STRIPE_TEST_WEBHOOK_SECRET;
 
   if (!stripeSecretKey || !stripeWebhookSecret) {
     throw new Error('Stripe keys are not defined');

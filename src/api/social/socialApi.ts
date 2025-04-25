@@ -46,6 +46,7 @@ class SocialApi {
           loginEvents: userData.loginEvents || [],
           priceId: userData.priceId || '',
          role: userData.role || '',
+          referrer: userData.referrer || '',
           plan: userData.plan || '',
           planStartDate: userData.planStartDate || '',
 

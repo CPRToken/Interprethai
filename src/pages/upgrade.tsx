@@ -154,13 +154,7 @@ const PricingSection: FC = () => {
                     currency="$"
                     description={t(tokens.form.planDescription)}
                     info={t(tokens.form.allContent)}
-                    features={[
-                      t(tokens.nav.imageGenerator),
-                      t(tokens.form.basicTools),
-                      t(tokens.nav.SEOWriter),
-                      t(tokens.form.unlimitedWords),
 
-                    ]}
                     icon={<PricingPlanIcon name="startup" />}
                     name={t(tokens.form.Basic)}
                     popular
@@ -190,14 +184,7 @@ const PricingSection: FC = () => {
                     currency="$"
                     description={t(tokens.form.planDescription)}
                     info={t(tokens.form.allContent)}
-                    features={[
-                      t(tokens.nav.imageGenerator),
-                      t(tokens.form.premTools),
-                      t(tokens.nav.SEOWriter),
-                      t(tokens.form.unlimitedWords),
 
-
-                    ]}
                     icon={<PricingPlanIcon name="standard" />}
                     name={t(tokens.form.Premium)}
                     popular
@@ -227,15 +214,7 @@ const PricingSection: FC = () => {
                     currency="$"
                     description={t(tokens.form.planDescription)}
                     info={t(tokens.form.allContent)}
-                    features={[
-                      t(tokens.nav.imageGenerator),
-                      t(tokens.form.businessTools),
-                      t(tokens.nav.SEOWriter),
-                      t(tokens.form.unlimitedWords),
 
-
-
-                    ]}
                     icon={<PricingPlanIcon name="business" />}
                     name={t(tokens.form.BusinessP)}
                     popular
